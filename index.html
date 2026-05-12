@@ -350,7 +350,7 @@ html, body { height: 100%; font-family: -apple-system, 'Noto Sans KR', sans-seri
     </button>
     <span id="modal-title"></span>
   </div>
-  <iframe id="modal-iframe" sandbox="allow-same-origin allow-scripts"></iframe>
+  <iframe id="modal-iframe" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
 </div>
 
 <script src="data_하천계획.js"></script>
@@ -532,7 +532,7 @@ function openDetail() {
     alert('상세노트 파일이 없습니다.');
     return;
   }
-  const src = currentSection.folder + '/' + t.file;
+  const src = encodeURIComponent(currentSection.folder) + '/' + encodeURIComponent(t.file);
   document.getElementById('modal-title').textContent = t.title;
   document.getElementById('modal-iframe').src = src;
   document.getElementById('modal').classList.add('open');
@@ -565,16 +565,15 @@ function showView(name) {
     topbarSub.textContent = '기술사 암기노트';
   } else if (name === 'card') {
     navbar.style.display = 'none';
-    backBtn.style.display = '';
-    homeBtn.style.display = 'block';
+    backBtn.style.display = 'flex';
+    homeBtn.style.display = 'flex';
     backLabel.textContent = '목록';
     topbarTitle.textContent = '암기카드';
     topbarSub.textContent = currentSection ? currentSection.name : '';
   } else {
     navbar.style.display = 'flex';
-    backBtn.style.display = '';
-    homeBtn.style.display = 'none';
-    backLabel.textContent = '홈';
+    backBtn.style.display = 'none';
+    homeBtn.style.display = 'flex';
     topbarTitle.textContent = currentSection ? currentSection.name : '';
     topbarSub.textContent = '수자원개발기술사';
     if (name === 'list')    document.getElementById('nav-list').classList.add('active');

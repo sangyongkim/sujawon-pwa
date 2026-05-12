@@ -1,4 +1,4 @@
-const CACHE = 'sujawon-v2';
+const CACHE = 'sujawon-v3';
 const ASSETS = [
   './',
   './index.html',
