@@ -532,7 +532,7 @@ function openDetail() {
     alert('상세노트 파일이 없습니다.');
     return;
   }
-  const src = '../' + currentSection.folder + '/' + t.file;
+  const src = currentSection.folder + '/' + t.file;
   document.getElementById('modal-title').textContent = t.title;
   document.getElementById('modal-iframe').src = src;
   document.getElementById('modal').classList.add('open');
@@ -566,7 +566,7 @@ function showView(name) {
   } else if (name === 'card') {
     navbar.style.display = 'none';
     backBtn.style.display = '';
-    homeBtn.style.display = '';
+    homeBtn.style.display = 'block';
     backLabel.textContent = '목록';
     topbarTitle.textContent = '암기카드';
     topbarSub.textContent = currentSection ? currentSection.name : '';

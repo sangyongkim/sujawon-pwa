@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>08수위유량관계곡선</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="수위-유량관계곡선rating-curve">수위-유량관계곡선(Rating Curve)</h1>
+<h2 id="개요">개요</h2>
+<ol>
+<li>정의 및 필요성
+<ul>
+<li>수위-유량곡선 : 특정 관측지점에서 하천 수위와 하천유량을 측정하여 회귀식을 통해 그 관계를 나타낸 곡선</li>
+<li>유량은 실시간 장기관측이 어려우며 유량 측정에는 큰 비용이 소요되므로 수위의 실시간 관측으로 유량을 추정</li>
+<li>이론적으로 하천수리학의 등류에서의 유속공식에서 멱함수 형태의 수위-유량 관계 유도 가능</li>
+</ul>
+</li>
+<li>수위-유량 관계 곡선형
+<ul>
+<li>곡선형의 종류
+<ul>
+<li>지수형 : <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo>=</mo><mi>a</mi><mo stretchy="false">(</mo><mi>H</mi><mo>+</mo><mi>z</mi><msup><mo stretchy="false">)</mo><mi>b</mi></msup></mrow><annotation encoding="application/x-tex">Q = a(H+z)^b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.87777em; vertical-align: -0.19444em;"></span><span class="mord mathnormal">Q</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal">a</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right: 0.08125em;">H</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 1.09911em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.04398em;">z</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.849108em;"><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">b</span></span></span></span></span></span></span></span></span></span></span></span></li>
+<li>포물선형 : <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo>=</mo><mi>a</mi><msup><mi>H</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>H</mi><mo>+</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">Q = aH^2 + bH + c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.87777em; vertical-align: -0.19444em;"></span><span class="mord mathnormal">Q</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.897438em; vertical-align: -0.08333em;"></span><span class="mord mathnormal">a</span><span class="mord"><span class="mord mathnormal" style="margin-right: 0.08125em;">H</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.814108em;"><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.77777em; vertical-align: -0.08333em;"></span><span class="mord mathnormal">b</span><span class="mord mathnormal" style="margin-right: 0.08125em;">H</span><span class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut" style="height: 0.43056em; vertical-align: 0em;"></span><span class="mord mathnormal">c</span></span></span></span></span></li>
+</ul>
+</li>
+<li>곡선형의 결정 : 도해적 방법(곡선자, 대수지 활용), 수리방정식 곡선 활용, 수학적 곡선 등을 이용한 회귀분석</li>
+</ul>
+</li>
+<li>작성 및 활용
+<ul>
+<li>관측점의 수위와 유량을 동시에 관측</li>
+<li>방안지에 도시하여 회귀식 유도</li>
+<li>하상 단면이 불규칙한 경우 저수유량, 중간규모, 고수유량별로 수위를 구분하여 작성</li>
+<li>수위-유량 관계가 정의되지 않은 수위에 대해서는 외삽을 통해 활용</li>
+</ul>
+</li>
+<li>유의사항
+<ul>
+<li>수위-유량 곡선의 신뢰도 향상을 위해서는 유량 측정자료의 신뢰도 검증이 중요</li>
+<li>하상단면의 변화가 클 경우 홍수 전후에 수위-유량 곡선의 수정이 필요하나 실제로는 년 또는 수년마다 수위-유량 관계곡선의 수정이 이루어지므로 정확도에 한계가 존재</li>
+<li>수위 구간별로 충분한 양의 관측자료가 확보되어야 함</li>
+</ul>
+</li>
+</ol>
+<h2 id="rating-curve의-조정">Rating Curve의 조정</h2>
+<ol>
+<li>수위-유량곡선의 통제
+<ul>
+<li>통제 : 인공 수로 혹은 자연하천에서 수심과 유량의 관계를 결정해주는 것</li>
+<li>단면통제 : 자연적 암반, 전석으로 뒤덮힌 여울, 보나 위어, 플룸 같은 인공 구조물에서 발생</li>
+<li>하도통제 : 하도의 크기, 경사, 조도, 축소 또는 확대, 형태 등 하천의 물리적 요소가 모두 반영됨</li>
+<li>실제 자연하천은 하도통제를 강하게 받음</li>
+</ul>
+</li>
+<li>Loop형 수위-유량 관계가 발생하는 이유
+<ul>
+<li>같은 수위일지라도 수면 경사에 비례하여 유량이 달라짐</li>
+<li>수위-유량곡선이 결과되는 이유는 준설, 세굴, 퇴적 등에 의한 하도의 인공적 및 자연적 변화, 배수 및 저하효과, 홍수시 수위의 급강하 및 강하, 하도내의 초목 및 얼음의 효과 등이며 그 중 가장 중요한 것은 배수 및 저하효과가 홍수위 수위의 급변화에 의한 영향</li>
+<li>홍수 수위 상승시에는 수면경사가 크므로 유량이 많고, 수위 하강시에는 수면경사가 작아 유량이 작음</li>
+</ul>
+</li>
+<li>수위-유량곡선 조정
+<ul>
+<li>기존 수위표 및 보주수위표를 이용하여 정상류의 rating curve 로 조정해야 함</li>
+<li>일정수면하강고 방법, 정상수면하강고 방법, 전파속도 이용 등의 방법 적용</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>Written with <a href="https://stackedit.io/">StackEdit</a>.</p>
+</blockquote>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>17기점홍수위 결정</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="기점-홍수위--하구-하도계획홍수위-결정방법">기점 홍수위 / 하구 하도계획홍수위 결정방법</h1>
+<h2 id="개요">개요</h2>
+<ul>
+<li>기점홍수위 : 계획홍수위 계산시 수위 계산 시작의 기준이 되는 수위</li>
+<li>계획홍수위 결정시 조도계수와 함께 정확도에 영향이 크므로 신중하게 결정</li>
+</ul>
+<h2 id="기점-홍수위-결정-방법">기점 홍수위 결정 방법</h2>
+<ul>
+<li>하구 계획홍수위 또는 배수효과가 있는 지류 → 기본적으로 본류 계획홍수위 사용</li>
+<li>본류의 영향을 받는 지류의 기점홍수위 : 본류 설계홍수량과 지류 설계홍수량과의 관계(홍수량, 발생시간)를 고려하여 결정
+<ol>
+<li>지류 계획홍수량이 본류의 계획홍수량에 비해 매우 작은 경우
+<ul>
+<li>지류 계획홍수량에 대한 등류계산수위와 본류 계획홍수위가 만나는 수위를 역으로 기점수위로 결정<br>
+<img src="https://lh3.googleusercontent.com/d/1QpL2I2OwXCTGnhKoCC3-a2CbHjJhHzd7" alt="본류에 비해 지류계획홍수량이 작은 경우"></li>
+</ul>
+</li>
+<li>지류와 본류 첨두홍수발생시간의 관계에 따라 3가지로 구분
+<ul>
+<li>본류, 지류 모두 계획홍수량인 경우 : 본류 계획홍수위를 기점수위</li>
+<li>본류 계획홍수량, 지류 계획홍수량이 아닌 경우 :
+<ul>
+<li>본류가 계획홍수위에 도달했을 때 본류의 첨두유량에 대응하는 유량이 지류에 유하하는 경우에는 본류 설계홍수위를 기점수위</li>
+<li>본류와 지류의 유역도달 특성이 극단적으로 차이가 날 경우 합류점의 본류 수위에 대해서 수평으로 한 수위를 기점수위<br>
+<img src="https://lh3.googleusercontent.com/d/1MaPnDCN8H0i_G1Ei5x0rih2LA9xmg2aF" alt="본류는 계획홍수량, 지류는 계획홍수량 미만인 경우"></li>
+</ul>
+</li>
+<li>지류는 계획홍수량, 본류는 계획홍수량이 아닌 경우 :
+<ul>
+<li>지류로부터 계획홍수량이 합류할 때, 본류 유량에 대응하는 본류 수위를 기점수위</li>
+<li>본류의 계획홍수량에 비해 지류 계획홍수량이 아주 작을 경우, 지류 계획홍수량에 대해 등류계산을 하여 구한 수위와 본류 계획홍수위가 만나는 수위를 역으로 기점수위<br>
+<img src="https://lh3.googleusercontent.com/d/1hrKA8vFR6v8_vLVXHNRePflBxZAui8Xf" alt="본류는 계획홍수량 미만, 지류는 계획홍수량인 경우"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>하천시설물에 의해 한계수심이 발생할 경우 한계수심 또는 설계홍수위를 기점수위</li>
+<li>하도가 급확대, 단락, 만곡, 또는 보<span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⋅</mo></mrow><annotation encoding="application/x-tex">\cdot</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.44445em; vertical-align: 0em;"></span><span class="mord">⋅</span></span></span></span></span>에 의해 수위변화가 일어나는 곳은 손실수두를 더함</li>
+<li>사수역 발생한 곳은 유수단면적에서 사수역을 빼고 계산한 수위</li>
+</ul>
+<h2 id="하구-계획홍수위-결정-방법">하구 계획홍수위 결정 방법</h2>
+<h3 id="태풍에-의한-고조-파랑-진파의-내습이-없는-지역">태풍에 의한 고조, 파랑, 진파의 내습이 없는 지역</h3>
+<ul>
+<li>계획홍수량이 유하할 때의 조위(대조평균만수위 + 하구의 손실수두)를 기점홍수위로 하여 배수계산한 수위</li>
+</ul>
+<h3 id="태풍에-의한-고조-파랑-진파의-내습이-있는-지역">태풍에 의한 고조, 파랑, 진파의 내습이 있는 지역</h3>
+<ol>
+<li>계획홍수량이 유하할 때의 조위를 기점홍수위로 하여 배수계산한 수위</li>
+<li>계획제방고 - 여유고 = (계획고조위 + 최대조위편차 + 파랑고) - 여유고</li>
+</ol>
+<ul>
+<li>1, 2 중 큰 값을 계획홍수위로 결</li>
+</ul>
+<blockquote>
+<p>Written with <a href="https://stackedit.io/">StackEdit</a>.</p>
+</blockquote>
+</div>
+</body>
+
+</html>

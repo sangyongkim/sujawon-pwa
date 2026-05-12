@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>02지역빈도해석</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="지역빈도해석">지역빈도해석</h1>
+<h2 id="개요">개요</h2>
+<ul>
+<li>빈도해석 : 수문관측자료를 이용하여 수문사상의 발생빈도를 확률적으로 예측<span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⋅</mo></mrow><annotation encoding="application/x-tex">\cdot</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.44445em; vertical-align: 0em;"></span><span class="mord">⋅</span></span></span></span></span>분석</li>
+<li>빈도해석의 종류
+<ol>
+<li>점빈도해석 : 분석대상자료가 지점관측자료에 국한</li>
+<li>지역빈도해석 : 대상지점을 포함하여 수문학적으로 동질성을 가지는 주변 지점의 자료를 모두 포함하여 확률수문량 산정</li>
+</ol>
+</li>
+</ul>
+<h2 id="지역빈도해석-1">지역빈도해석</h2>
+<ul>
+<li>목적 : 점빈도해석결과의 약점을 보완하여 확률수문량의 정확도 향상</li>
+<li>장점 : 관측자료기간이 짧은 수문관측소에도 확률수문량을 산정할 수 있어 유역의 수문특성을 대변</li>
+<li>방법 : 적정 모형의 일반식을 산정하고 다중회귀분석을 통해서 지역을 대표하는 계수를 산정</li>
+<li>필요성 : 미계측지역의 홍수빈도해석과 분석자료의 신뢰성을 위해서 사용할 수 있음.</li>
+<li>종류 :
+<ol>
+<li>홍수량 지역빈도해석 : 지표홍수법, Q<sub>t</sub>의 통계 추정법, 모멘트 추정법, 전이법</li>
+<li>강우량 지역빈도해석 : IDF, DAD곡선</li>
+</ol>
+</li>
+<li>해석절차
+<ol>
+<li>자료수집</li>
+<li>자료검증<span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⋅</mo></mrow><annotation encoding="application/x-tex">\cdot</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.44445em; vertical-align: 0em;"></span><span class="mord">⋅</span></span></span></span></span>수정 및 보완 (L-모멘트비 도시)</li>
+<li>지역구분 (지역구분 및 재조정, 불일치적도 산정, 이질성척도 산정)</li>
+<li>최적분포형 산정 (확률분포형 적용, 매개변수 추정, 적합도 검정)</li>
+<li>확률수문량 산정</li>
+<li>확률수문량의 정확성 검정 (지역구역최적화)</li>
+</ol>
+</li>
+</ul>
+<h2 id="지역해석빈도-방법">지역해석빈도 방법</h2>
+<ol>
+<li>지표홍수법 : 일정 재현기간의 홍수량 또는 평균홍수량에 대한 지역적 관계를 작성한 후 지역별로 작성된 평균무차원 빈도곡선을 이용
+<ul>
+<li>절차
+<ol>
+<li>관측점별 홍수량의 연최대치계열을 작성하고 점빈도 분석 시행</li>
+<li>관측점별®로 재현기간(T) 홍수량 Q<sub>(R,T)</sub>을 구하여 관측지점별 평년빈도 홍수량 Q<sub>(R,T=2.33)</sub>으로 나누어 비를 표로 작성</li>
+<li>재현기간별 비의 중간값을 추출</li>
+<li>재현기간-중간값을 빈도곡선으로 그리면 그 곡선이 홍수량 빈도곡선이 됨</li>
+</ol>
+</li>
+<li>문제점 : 지역의 동질성에 의구심, 미계측 관측점의 자료보완 문제</li>
+</ul>
+</li>
+<li>Q<sub>t</sub>의 통계 추정법
+<ul>
+<li>재현기간에 따른 홍수량을 유역특성인자와의 상관관계로 추정</li>
+<li>각 재현기간마다 유도된 회귀식이 다를 수 있음</li>
+</ul>
+</li>
+<li>모멘트 추정법
+<ul>
+<li>홍수량 자료의 각 모멘트와 유역특성인자를 상관</li>
+</ul>
+</li>
+<li>전이법
+<ul>
+<li>미계측 지점의 상류 또는 하류에 가까이 있으며 장기간 기록이 있는 지점에서 해석된 빈도곡선을 유역면적만을 사용하여 미계측 지점의 빈도곡선을 구축하는데 사용</li>
+<li>추정절차가 간단하므로 임시 조사에 주로 이용하나 추정치의 정확도가 낮기 때문에 사용시 주의</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>Written with <a href="https://stackedit.io/">StackEdit</a>.</p>
+</blockquote>
+</div>
+</body>
+
+</html>
