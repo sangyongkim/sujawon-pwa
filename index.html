@@ -250,6 +250,9 @@ html, body { height: 100%; font-family: -apple-system, 'Noto Sans KR', sans-seri
       <div id="topbar-title">수자원개발기술사</div>
       <div id="topbar-sub">기술사 암기노트</div>
     </div>
+    <button id="home-btn" onclick="goHome()" style="display:none;background:none;border:none;color:var(--text3);padding:4px 0 4px 8px;cursor:pointer">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    </button>
   </div>
 
   <!-- Content -->
@@ -553,20 +556,24 @@ function showView(name) {
   const topbarTitle = document.getElementById('topbar-title');
   const topbarSub = document.getElementById('topbar-sub');
 
+  const homeBtn = document.getElementById('home-btn');
   if (name === 'home') {
     navbar.style.display = 'none';
     backBtn.style.display = 'none';
+    homeBtn.style.display = 'none';
     topbarTitle.textContent = '수자원개발기술사';
     topbarSub.textContent = '기술사 암기노트';
   } else if (name === 'card') {
     navbar.style.display = 'none';
     backBtn.style.display = '';
+    homeBtn.style.display = '';
     backLabel.textContent = '목록';
     topbarTitle.textContent = '암기카드';
     topbarSub.textContent = currentSection ? currentSection.name : '';
   } else {
     navbar.style.display = 'flex';
     backBtn.style.display = '';
+    homeBtn.style.display = 'none';
     backLabel.textContent = '홈';
     topbarTitle.textContent = currentSection ? currentSection.name : '';
     topbarSub.textContent = '수자원개발기술사';
@@ -583,10 +590,14 @@ function goBack() {
   if (currentView === 'card') {
     showView('list');
   } else {
-    currentSection = null;
-    currentSectionData = null;
-    showView('home');
+    goHome();
   }
+}
+
+function goHome() {
+  currentSection = null;
+  currentSectionData = null;
+  showView('home');
 }
 
 // ── Touch swipe for card navigation ──
